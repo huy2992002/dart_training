@@ -1,11 +1,16 @@
 void main(List<String> args) {
   print(sum(5.2, 4.8)); //call method list parameters are not suggestions 
+
   print(difference(a: 5, b: 2)); // call method list parameters with suggestions
 }
 
 // This is a normal, one-line comment.
 /* Comments like these are also supported. */
 
+//method only one line
+double sum(double a, double b) => a+b;
+
+double difference({required double a,required double b}) => a - b;
 
 // create a method (function)
 //type  nameMethod (List parametes) { body }
@@ -27,8 +32,6 @@ void variables() {
   final name7; // Similar to const but can be assigned a value later
 }
 
-double sum(double a, double b) => a+b;
 
-double difference({required double a,required double b}) => a - b;
 
 
